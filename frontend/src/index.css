@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-body bg-white text-luxe-dark dark:bg-luxe-dark dark:text-luxe-cream transition-colors duration-300;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-luxe-gold/60 rounded-full;
+}
+
+.container-luxe {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply bg-luxe-gold text-white px-6 py-3 rounded-full font-medium tracking-wide hover:bg-luxe-gold/90 transition-all duration-300 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-outline {
+  @apply border border-luxe-gold text-luxe-gold px-6 py-3 rounded-full font-medium hover:bg-luxe-gold hover:text-white transition-all duration-300;
+}
+
+.card {
+  @apply bg-white dark:bg-neutral-900 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+}
+
+.skeleton {
+  @apply animate-pulse bg-neutral-200 dark:bg-neutral-800 rounded-lg;
+}
